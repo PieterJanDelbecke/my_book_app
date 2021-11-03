@@ -1,0 +1,12 @@
+<h1>New</h1>
+
+<%= form_with model: @book do |form| %>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+    <br>
+    <%= form.label :author_id %>
+    <%= form.select(:author_id, @authors.map{|b|[b.name, b.id]}) %> 
+    <br>
+    <%= form.submit%>
+
+<% end %>

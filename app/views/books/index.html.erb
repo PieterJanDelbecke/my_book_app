@@ -1,0 +1,9 @@
+<h1>index</h1>
+
+<ul>
+    <% @books.each do |book| %>
+        Book: <%= book[:title] %><br>
+        Author: <%= book[:author_id]%>
+        <br><br>
+    <% end %>
+</ul>

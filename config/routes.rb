@@ -1,3 +1,13 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root to: "books#index"
+
+  get "/books", to: "books#index"
+  post "/books", to: "books#create"
+  get "books/new", to: "books#new"
+  get "books/:id", to: "books#show", as:"book"
+  put "books/:id", to: "books#update"
+  patch "books/:id", to: "books#update"
+  delete "/books/:id", to: "books#destroy"
+  # get "/listings/:id/edit", to: "lisitngs#edit", as: "edit_listing"
+
 end
