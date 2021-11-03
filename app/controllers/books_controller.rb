@@ -17,6 +17,13 @@ class BooksController < ApplicationController
         @book = Book.create(book_params)
         redirect_to books_path
     end
+    
+    def edit
+    end
+
+    def update
+        
+    end
 
 
     private

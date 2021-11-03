@@ -1,0 +1,9 @@
+<h1>Authors New</h1>
+
+<%= form_with model: @author do |form| %>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+    <br>
+    <%= form.submit%>
+
+<% end %>
